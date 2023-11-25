@@ -1,0 +1,8 @@
+<h1>practice project</h1>
+<input type="text" placeholder="Enter First Name" [(ngModel)]="firstName"/>
+<input type="text" placeholder="Enter Last Name" [(ngModel)]="lastName" />
+<br/>
+<button (click)="addData()">Add</button>
+
+<h3>display names</h3>
+<p *ngFor="let data of nameData; let i = index">{{data.firstname}}  {{data.lastname}}<button (click)="deleteData(i)">Delete</button></p>
